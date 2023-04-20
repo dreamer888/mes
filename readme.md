@@ -17,6 +17,7 @@ demo  网址 http://47.240.54.105:8081
 后端  http://47.240.54.105:8088 
 
  admin/123456   ,验证码 ，为了方便随便输入即可比如888
+![image](https://user-images.githubusercontent.com/2752431/233422474-b7195d69-4d1d-4d12-9d5f-46e6e50f00ff.png)
 
 
 **二、目前MES系统的功能 ：** 
@@ -67,33 +68,29 @@ http://erp.dreammm.net
 当然，客户在实施MES的时候 可以选择和erp对接， 也可以使用独立的MES数据 
 下面是 erp的截图  
 
-![输入图片说明](images/image-apps.png)
-
-![输入图片说明](images/image-manfacture.png)
+![image](https://user-images.githubusercontent.com/2752431/233422942-3fde1889-be7d-4471-bad1-75b81ea3f0c2.png)
 
 
-![输入图片说明](images/image-application.png)
+![image](https://user-images.githubusercontent.com/2752431/233422813-fbdf8d77-c0a5-4535-8bf4-e140ab1019b1.png)
+
+![image](https://user-images.githubusercontent.com/2752431/233423116-75177eb3-4c41-48fd-bf33-e96657ed7686.png)
+
 
 **三、部分截图**
 
-看板
-
-![输入图片说明](images/image.png)
+低代码看板设计平台
+![image](https://user-images.githubusercontent.com/2752431/233423611-21a11b83-8e48-4426-bf20-c90f58ae1397.png)
 
 
 后端
 
 
-![输入图片说明](images/image-order-gant.png)
-
-![输入图片说明](images/image-daliy-plan.png)
-
-![输入图片说明](images/image3.png)
-
-![输入图片说明](images/image--%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E9%85%8D%E7%BD%AE-%E7%BC%96%E8%BE%91.png)
+数据采集 ：
+![image](https://user-images.githubusercontent.com/2752431/233423917-1529d1cb-a9d6-4e53-9cfa-a4a02a430e5b.png)
 
 
-![输入图片说明](images/image=product.png)
+![image](https://user-images.githubusercontent.com/2752431/233424095-e010c982-914b-4954-be08-03c8a5e3047f.png)
+
 
 **四、 源码地址 **
 
@@ -103,17 +100,19 @@ http://erp.dreammm.net
 2   后端代码 参考 ：mes-backend  
 
 
-      需要替换 mysql 配置， redis  配置，  
+      需要替换 mysql 配置， redis  配置，  必须配置，否则项目运行异常退出。
 
       rabbitmq url 配置是在controller文件代码中配置的，
-      是选择项，不一定配置， 
+      是选择项，不一定配置， 不使用rabbitmq 项目也可以使用。
 
      前端的url 也是 在controller 文件中配置的 ，这个必须配置正确。
       在 controller 配置的两个url  ，可以通过“数据采集配置” 界面进行配置  。
 
 3   物联网组件用户对接设备  参考  ：iot-componet
 
-     这个没有设备，不实际采集数据就不用启动它 。
+     这个没有设备，不实际采集数据就可以不用启动它 。
+     
+     建议数据采集组件通过rabbitqm把数据传递到 mes主程序去处理 。
      
 
 **五、 项目技术架构**
@@ -148,21 +147,19 @@ http://47.242.184.27:8071/
 
 
 最新MES系统 
-http://47.242.184.27:9900/#/home
+http://47.242.184.27:8800/#/home
 
 系统亮点：
 低代码设计平台，括自定义打印设计，Excel 模版导出，自定义桌面工作台，部分表单融入进度条步骤条，移动端设计精美合理，多平台支持，自己设
 HM-MES 工厂管家 系统特色说明 第2页计精美看板，自定义实体扩展，表格拖拉拽，工序拖拽，数据字典支持SQL配置等诸多亮点。
+![image](https://user-images.githubusercontent.com/2752431/233425058-fbd54646-5749-4d7e-b5d5-3f0957e609aa.png)
 
 
-![输入图片说明](images/image-new.png)
+![image](https://user-images.githubusercontent.com/2752431/233425327-89c4a4cf-1d2a-4ba3-adec-a26e68470aa9.png)
 
 
-看板设计器
-![输入图片说明](kanban.png)
-==============
 
-前端
+简易mes前端
 
 日期工具库：static/lib/dayjs.min.js
 
