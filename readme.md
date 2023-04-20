@@ -11,9 +11,13 @@ MOM概念的提出正是基于mes这个尴尬的问题 。
 
 demo  网址 http://47.240.54.105:8081
 
+![image](https://user-images.githubusercontent.com/2752431/233421635-001b7fcf-738c-4876-b003-5296720bccba.png)
+
+
 后端  http://47.240.54.105:8088 
 
  admin/123456   ,验证码 ，为了方便随便输入即可比如888
+
 
 **二、目前MES系统的功能 ：** 
 
