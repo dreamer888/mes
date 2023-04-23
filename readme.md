@@ -4,6 +4,7 @@ mes系统可以独立设计， 也可以和其它系统对接 ，mes系统的边
 
 MOM概念的提出正是基于mes这个尴尬的问题 。
 
+码云gitee的源码地址 https://gitee.com/imdreamer/hm-MES.git
 
 **一、已经商业化应用的的项目， 因为mes系统的设备在内网，只能发demo数据网址 ：** 
 
